@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Profile Image as Background -->
+        <ImageView
+            android:id="@+id/imgProfileBackground"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_placeholder" />
+
+        <!-- Edit Icon -->
+        <ImageView
+            android:id="@+id/iconEditProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:src="@drawable/edit_profile"
+            android:background="@drawable/blur_background" />
+
+        <!-- Content Section -->
+        <LinearLayout
+            android:id="@+id/layoutProfileContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/rounded_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="40dp"
+                android:text="User Name"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- About Section -->
+            <TextView
+                android:id="@+id/txtAboutUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="About: This is a user profile section where you can edit details and log out."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_background"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

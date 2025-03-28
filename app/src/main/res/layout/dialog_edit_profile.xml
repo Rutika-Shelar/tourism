@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_placeholder"
+        android:contentDescription="Profile Picture"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Name Input Field -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textColorHint="@android:color/darker_gray"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <!-- About Input Field -->
+    <EditText
+        android:id="@+id/editAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter About Section"
+        android:textColorHint="@android:color/darker_gray"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
