@@ -8,4 +8,6 @@
     <color name="light_blue">#C7EEFF</color>
     <color name="grey">#FAFAFA</color>
     <color name="red">#FF0000</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="teal_700">#008577</color>
 </resources>
