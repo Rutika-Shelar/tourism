@@ -68,19 +68,17 @@ public class ProfileFragment extends Fragment {
                 .show();
     }
 
-
     public void updateUserProfile(String name, String about, String imageUri) {
         UserProfile profile = new UserProfile(name, about, imageUri);
         userProfileDao.insertProfile(profile);
         loadUserProfile();
     }
+
     private void logoutUser() {
         SharedPreferences preferences = requireActivity().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.clear();
         editor.apply();
-
-        userProfileDao.deleteAllProfiles();
 
         Intent intent = new Intent(getActivity(), LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

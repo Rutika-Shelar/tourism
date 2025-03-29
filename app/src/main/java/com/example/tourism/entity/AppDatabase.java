@@ -18,7 +18,7 @@ public abstract class AppDatabase extends RoomDatabase {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     AppDatabase.class, "user_profile_db")
                             .fallbackToDestructiveMigration()
-                            .allowMainThreadQueries() // Use a background thread in real apps
+                            .allowMainThreadQueries()
                             .build();
                 }
             }

@@ -1,5 +1,7 @@
 package com.example.tourism.ui.viewmodel;
 
+import android.util.Log;
+
 import androidx.lifecycle.ViewModel;
 import com.example.tourism.entity.Story;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -15,7 +17,7 @@ public class StorySubmissionViewModel extends ViewModel {
 
     public void submitStory(String title, String description, String userName, String imageUrl) {
         long timestamp = System.currentTimeMillis();
-        String status = "Pending"; // Default status
+        String status = "Pending";
 
         Story story = new Story(null, title, description, userName, timestamp, status, imageUrl);
 
@@ -30,10 +32,11 @@ public class StorySubmissionViewModel extends ViewModel {
         firestore.collection("stories")
                 .add(storyMap)
                 .addOnSuccessListener(documentReference -> {
-                    // Success callback
+                    String documentId = documentReference.getId();
+                    Log.d("StorySubmission", "Story added with ID: " + documentId);
                 })
                 .addOnFailureListener(e -> {
-                    // Error handling
+                    Log.w("StorySubmission", "Error adding story", e);
                 });
     }
 }

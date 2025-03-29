@@ -13,7 +13,7 @@ public class Story {
     public Story() {
     }
 
-    // Parameterized constructor
+
     public Story(String id, String title, String description, String userName, long timestamp, String status, String imageUrl) {
         this.id = id;
         this.title = title;

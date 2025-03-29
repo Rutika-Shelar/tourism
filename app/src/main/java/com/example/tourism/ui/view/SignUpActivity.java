@@ -9,9 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.tourism.R;
-import com.example.tourism.ui.viewwmodel.AuthViewModel;
-
-import org.w3c.dom.Text;
+import com.example.tourism.ui.viewmodel.AuthViewModel;
 
 
 public class SignUpActivity extends AppCompatActivity {

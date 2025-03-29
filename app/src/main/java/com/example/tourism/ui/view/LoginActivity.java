@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.tourism.R;
-import com.example.tourism.ui.viewwmodel.AuthViewModel;
+import com.example.tourism.ui.viewmodel.AuthViewModel;
 
 public class LoginActivity extends AppCompatActivity {
     private AuthViewModel authViewModel;
@@ -46,10 +46,5 @@ public class LoginActivity extends AppCompatActivity {
         goToSignUp.setOnClickListener(v -> startActivity(new Intent(this, SignUpActivity.class)));
     }
 
-    private void saveLoginState() {
-        SharedPreferences preferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putBoolean("isLoggedIn", true);
-        editor.apply();
-    }
+
 }

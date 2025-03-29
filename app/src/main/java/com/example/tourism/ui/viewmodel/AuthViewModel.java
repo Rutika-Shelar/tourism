@@ -1,4 +1,4 @@
-package com.example.tourism.ui.viewwmodel;
+package com.example.tourism.ui.viewmodel;
 
 import android.app.Application;
 
