@@ -9,6 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+
     }
 }
 dependencyResolutionManagement {
@@ -16,8 +17,16 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
     }
 }
 
 rootProject.name = "Tourism"
 include ':app'
+
+
+include ':unityLibrary'
+
+project(':unityLibrary').projectDir = new File('C:/Users/HP/AndroidStudioProjects/Tourism/unityLibrary')
+
+
