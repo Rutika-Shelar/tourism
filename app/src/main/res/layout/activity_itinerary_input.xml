@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/place_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Place to Visit"
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/trip_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Trip Date (e.g. 2023-12-01)"
+        android:inputType="date"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/trip_duration_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Trip Duration (in days)"
+        android:inputType="number"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_margin="8dp" />
+
+    <EditText
+        android:id="@+id/budget_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Budget (in USD)"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_margin="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/generate_plan_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Travel Plan"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

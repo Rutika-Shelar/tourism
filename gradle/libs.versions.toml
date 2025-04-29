@@ -1,5 +1,7 @@
 [versions]
 agp = "8.4.1"
+arcoreClient = "1.23.0"
+core = "1.48.0"
 firebaseBom = "33.11.0"
 firebaseFirestore = "25.1.3"
 glide = "4.12.0"
@@ -7,15 +9,23 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
+mapboxAndroidSdk = "9.6.2"
+mapboxAndroidTelemetry = "4.8.0"
 material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
 firebaseAuth = "23.2.0"
 playServicesLocation = "21.3.0"
 roomRuntime = "2.6.1"
+supportVectorDrawable = "28.0.0"
+unityArcore = "1.0.0"
 
 [libraries]
+animated-vector-drawable = { module = "com.android.support:animated-vector-drawable", version.ref = "supportVectorDrawable" }
+appcompat-v7 = { module = "com.android.support:appcompat-v7", version.ref = "supportVectorDrawable" }
+arcore-client = { module = "com.google.ar:arcore-client", version.ref = "arcoreClient" }
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+core = { module = "com.google.ar:core", version.ref = "core" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
@@ -23,6 +33,8 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+mapbox-android-sdk = { module = "com.mapbox.mapboxsdk:mapbox-android-sdk", version.ref = "mapboxAndroidSdk" }
+mapbox-android-telemetry = { module = "com.mapbox.mapboxsdk:mapbox-android-telemetry", version.ref = "mapboxAndroidTelemetry" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
@@ -30,6 +42,14 @@ firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version
 play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+support-compat = { module = "com.android.support:support-compat", version.ref = "supportVectorDrawable" }
+support-core-ui = { module = "com.android.support:support-core-ui", version.ref = "supportVectorDrawable" }
+support-core-utils = { module = "com.android.support:support-core-utils", version.ref = "supportVectorDrawable" }
+support-media-compat = { module = "com.android.support:support-media-compat", version.ref = "supportVectorDrawable" }
+support-v4 = { module = "com.android.support:support-v4", version.ref = "supportVectorDrawable" }
+support-vector-drawable = { module = "com.android.support:support-vector-drawable", version.ref = "supportVectorDrawable" }
+unity-android-permissions = { module = "com.unity3d:unity-android-permissions", version.ref = "unityArcore" }
+unity-arcore = { module = "com.unity3d:unity-arcore", version.ref = "unityArcore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

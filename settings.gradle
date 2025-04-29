@@ -8,8 +8,9 @@ pluginManagement {
             }
         }
         mavenCentral()
-        gradlePluginPortal()
 
+
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
@@ -17,16 +18,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-
+        maven{
+            url = uri("https://api.mapbox.com/downloads/v2/releases/maven")
+        }
     }
 }
 
 rootProject.name = "Tourism"
 include ':app'
-
-
-include ':unityLibrary'
-
-project(':unityLibrary').projectDir = new File('C:/Users/HP/AndroidStudioProjects/Tourism/unityLibrary')
-
-
